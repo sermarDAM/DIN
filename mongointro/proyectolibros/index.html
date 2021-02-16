@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>libros</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="stylesheet" href="./css/photon.css">
+  <link rel="stylesheet" href="node_modules/xel/themes/material.css">
+  <script src="./node_modules/xel/xel.min.js"></script>
+</head>
+
+<body>
+  <div class="window">
+    <header class="toolbar toolbar-header">
+    </header>
+    <div class="window-content">
+      <div class="pane-group">
+
+        <!--panel imágenes-->
+        <div class="pane">
+          <div class="wrapper" id="wrapper">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <footer class="toolbar toolbar-header">
+      <x-box>
+        <x-button skin="textured" style="margin-left:150px;">
+          <x-box>
+            <x-icon name="camera"></x-icon>
+            <x-label>Panel CRUD</x-label>
+          </x-box>
+      
+          <dialog>
+            <x-box style="margin-left: 30px; margin-top: 20px;">
+              <x-input skin="flat" id="txtBuscar">
+                <x-icon name="search"></x-icon>
+                <x-label>Busqueda por libro</x-label>
+              </x-input>
+              <x-button style="margin-left: 10px;" id="btnBuscar">
+                <x-label>Buscar</x-label>
+              </x-button>
+            </x-box>
+      
+          </dialog>
+      
+        </x-button>
+        <x-button skin="textured" style="margin-left:10px;" id="btnTodos">
+          <x-box>
+            <x-icon name="home"></x-icon>
+            <x-label>Home</x-label>
+          </x-box>
+        </x-button>
+      </x-box>
+      </footer>
+  </div>
+
+
+
+  <script>require('./app.js')</script>
+</body>
+
+</html>
